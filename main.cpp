@@ -1,9 +1,11 @@
-#include<iostream>
-#include<cstdlib>
+#include "mainwindow.h"
+#include <QApplication>
 
-using namespace std;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-int main(int argc, char const *argv[]) {
-  cout<<"teste"<<endl;
-  return 0;
+    return a.exec();
 }
